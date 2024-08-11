@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source Codes - SkidBin</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Apply stars background */
+        body {
+            font-family: 'Fredoka One', cursive;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+            background-color: #000;
+            color: #888;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            overflow-y: auto; /* Ensure vertical scrolling is enabled */
+        }
+
+        .topbar {
+            background-color: #222;
+            color: #888;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+
+        .topbar a {
+            color: #888;
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 0 15px;
+        }
+
+        .topbar a:hover {
+            color: #fff;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 70px auto 20px; /* Adjust margin-top to account for fixed top bar */
+            padding: 20px;
+            background-color: #111;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+            width: 90%; /* Ensure container fits well on smaller screens */
+            max-width: 1500px; /* Limit maximum width for larger screens */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            overflow-x: auto; /* Allows horizontal scrolling if needed */
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+            word-break: break-word; /* Ensures long words break properly */
+        }
+
+        th {
+            background-color: #222;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #888;
+            text-decoration: none;
+            background-color: transparent;
+            transition: background-color 0.3s, color 0.3s;
+            border: 1px solid #888;
+            border-radius: 5px;
+        }
+
+        a.button:hover {
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .comment {
+            color: #aaa;
+            font-style: italic;
+        }
+
+        /* Custom Scrollbar Styles */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #111;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        @media (max-width: 768px) {
+            .topbar a {
+                font-size: 0.9rem;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            a.button {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .topbar a {
+                font-size: 0.8rem;
+                margin: 0 10px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            a.button {
+                font-size: 0.8rem;
+                padding: 6px 12px;
+            }
+
+            table {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <a href="/">Home</a>
+        <a href="/source.html">Source Codes</a>
+    </div>
+
+    <div class="container">
+        <h1>Source Codes</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Comment</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>NotiLib</td>
+                    <td class="comment">a notification roblox ui library</td>
+                    <td><a href="https://github.com/SkidBinOnTop/NotiLib" class="button">View</a></td>
+                </tr>
+                <tr>
+                    <td>DiscordWebhookSpammer</td>
+                    <td class="comment">Discord Webhook Spammer Using Proxies.</td>
+                    <td><a href="https://github.com/SkidBinOnTop/DiscordWebhookSpammer" class="button">Download</a></td>
+                </tr>
+                <tr>
+                    <td>Roblox Multi-Instance</td>
+                    <td class="comment">a python Roblox multi instance console pretty self explanatory.</td>
+                    <td><a href="https://github.com/SkidBinOnTop/Roblox-Multi-Instance" class="button">Download</a></td>
+                </tr>
+                <tr>
+                    <td>IP Blocker Website Template</td>
+                    <td class="comment">ip blacklisting system, pretty self-explaining check it out!</td>
+                    <td><a href="https://github.com/SkidBinOnTop/IP-Blocker-Website-Template" class="button">Download</a></td>
+                </tr>
+                <tr>
+                    <td>BypassDiscordBot</td>
+                    <td class="comment">a discord bot to bypass adlinks, exploit key systems, and more!</td>
+                    <td><a href="https://github.com/SkidBinOnTop/BypassDiscordBot" class="button">Download</a></td>
+                </tr>
+                <tr>
+                    <td>Vort</td>
+                    <td class="comment">open-source monaco wpf tabs for roblox exploits.</td>
+                    <td><a href="https://github.com/SkidBinOnTop/Vort" class="button">Download</a></td>
+                </tr>
+                <tr>
+                    <td>Injector</td>
+                    <td class="comment">a basic DLL injector.</td>
+                    <td><a href="https://github.com/SkidBinOnTop/Injector" class="button">Download</a></td>
+                </tr>
+                <tr>
+                    <td>Console Discord Bot</td>
+                    <td class="comment">a discord bot powered by discord.py fully controlled by console.</td>
+                    <td><a href="https://github.com/SkidBinOnTop/XOSP-Console-Discord-Bot" class="button">Download</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
